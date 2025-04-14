@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    line-height: 1.6;
+}
+/* ************* Menue ************************ */
+header {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+header .name-site {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.menue {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    font-weight: 700;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #f3f3fa54;
+}
+/* ************* Main section ************************ */
+main {
+    margin-top: 168px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+select, input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #900;
+}
+/* ************* Navigation link ************************ */
+nav a {
+    font-weight: 700;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #f3f3fa54;
+}
+/* ************* Footer section ************************ */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+/* ************* Responsive ************************ */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    select, input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
